@@ -19,7 +19,7 @@ app.use(cors({origin: "*"}))
 */
 
 
-app.use('/static', express.static(__dirname + "/assets"));
+app.use('/static', express.static( "./src/assets"));
 
 const server = app.listen(PORT, ()=>{
     console.log('servidor de express iniciado')

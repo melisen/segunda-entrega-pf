@@ -1,9 +1,10 @@
 import express from 'express';
+import instancia from './src/daos/index.js';
 
 const {Router} = express;
 const productosRouter = Router();
 
-import instancia from './src/daos/index.js';
+
 
 const productos = new instancia.producto;
 
