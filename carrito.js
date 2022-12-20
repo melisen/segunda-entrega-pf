@@ -9,7 +9,7 @@ const carritos = new instancia.carrito;
 
 routerCarrito.post('/', async (req, res)=>{
     const {...objeto} = req.body;
-    let nuevoCarrito =  await carritos.guardar(objeto);
+    let nuevoCarrito =  await carritos.guardar({...objeto});
     res.json({guardado: objeto.id})
 
 })

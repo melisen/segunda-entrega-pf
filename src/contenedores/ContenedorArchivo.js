@@ -17,7 +17,6 @@ class ContenedorArchivo{
     }
 
     async listarPorID(id){
-        
             const objetos = fs.readFile(this.ruta, 'utf-8');
             const res = await JSON.parse(objetos);
             const buscado = res.find(ob => ob.id == id);
